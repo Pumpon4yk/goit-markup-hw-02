@@ -5,6 +5,7 @@
  --frame-cards: #EEEEEE;
  --backgraund-footer: #2F303A;
  --blue-color: #2196F3;
+ --blue-second: #188CE8;
  --black-color: #212121;
  --grey-color: #757575;
  --white-color: #ffffff;
@@ -13,15 +14,25 @@
 /* Головна сторінка */
 
 body{
-    background-color: var(--background-color);
+    background-color: var(--white-color);
     font-family: 'Roboto', sans-serif;
     color: var(--black-color);
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
 
-/* Шапка */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 
-.header{
-    background-color: var(--white-color);
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .logo,
@@ -31,7 +42,6 @@ body{
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    letter-spacing: 0.03em;
 
     color: #000000;
 
@@ -42,13 +52,7 @@ body{
     color: var(--blue-color);
 }
 
-.nav-list,
-.skill-list,
-.activity-list,
-.team-list,
-.address-list,
-.portfolio-list,
-.works-list{
+.list{
     list-style: none;
 }
 
@@ -62,7 +66,6 @@ body{
 
 .nav-link{
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--black-color);
@@ -73,9 +76,12 @@ body{
     color: var(--blue-color);
 }
 
+.curent {
+    color: var(--blue-color);
+}
+
 .cont-link{
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14px;
     letter-spacing: 0.02em;
     color: var(--grey-color);
@@ -98,6 +104,7 @@ body{
     line-height: 1.36;
     letter-spacing: 0.06em;
     color: var(--white-color);
+    text-transform: uppercase;
 }
 
 .btn{
@@ -111,44 +118,40 @@ body{
 
 .btn:hover,
 .btn:focus{
-    background-color: #188CE8;
+    background-color: var(--blue-second);
 }
 
-.title-skills,
 .activity-title,
 .team-title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.7;
-    letter-spacing: 0.03em;
 }
 
 .titel-items{
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
 .text-skills{
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     color: var(--grey-color);
+}
+
+.section-team{
+    background-color: var(--background-color-second);
 }
 
 .employee{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.9;
-    letter-spacing: 0.03em;
 }
 
 .team-position{
     font-size: 16px;
     line-height: 1.9;
-    letter-spacing: 0.03em;
     color: var(--grey-color);
 }
 
@@ -157,14 +160,16 @@ body{
     background-color: var(--backgraund-footer);
 }
 
+.address{
+    font-style: normal;
+}
+
 .logo-footer{
     color: var(--white-color);
 }
 
 .address-link{
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     color: var(--white-color);
 }
 
@@ -174,9 +179,7 @@ body{
 }
 
 .cont-link-footer{
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     color: #FFFFFF99;;
 }
 
@@ -193,7 +196,6 @@ body{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    letter-spacing: 0.03em;
 
     cursor: pointer;
 }
@@ -204,7 +206,7 @@ body{
     color: var(--white-color);
 }
 
-.warks-title{
+.works-title{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -215,6 +217,5 @@ body{
 .works-type{
     font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.03em;
     color: var(--grey-color);
 }
