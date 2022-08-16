@@ -133,6 +133,7 @@ body{
 
 .titel-items{
     font-weight: 700;
+    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
@@ -196,6 +197,7 @@ body{
 
 .filter{
     background-color: var(--background-color-second);
+    color: var(--black-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
